@@ -18,7 +18,7 @@ Other functionalities include: Horizontal image scroll, Dynamic date at footer(c
 
 Site link: https://zeus-kronos.github.io/scroll-project/
 
-Developed with
+## Developed with
 | Visual Studio Code | | HTML | | Taiilwind CSS (A CSS Framework) | | Javascript |
 
 Author
