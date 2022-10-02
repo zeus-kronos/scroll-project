@@ -14,7 +14,7 @@ Other functionalities include: Horizontal image scroll, Dynamic date at footer(c
 ![](./aboutpage.png)
 
 3
-![](./togglexfooter)
+![](./togglexfooter.png)
 
 Site link: https://zeus-kronos.github.io/scroll-project/
 
