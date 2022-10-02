@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Scroll Project</title>
+
+
+</head>
+
+<body class="bg-gray-100">
+
+    <div id="backToTop"></div>
+
+    <!-- header -->
+    <header id="home" class="header z-50  transform transition-all duration-1000">
+
+        <!-- navbar -->
+        <nav id="nav" class="transform transition-all duration-1000">
+            <div class="nav-center md:flex justify-between items-center shadow-md md:px-12 lg:px-32 bg-gradient-to-t from-green-900 to-green-900 text-white ">
+
+                <!-- nav-header -->
+                <div class="flex justify-between items-center px-6">
+                    <!-- logo -->
+                    <h1 id="logo" class="logo py-3 bg-transparent tracking-wider font-semibold text-teal-600  lg:text-lg">zues<span class="text-yellow-500">Script</span></h1>
+
+                    <!-- menu btn -->
+                    <button class="relative nav-toggle md:hidden text-xl text-white">
+                        <div class="open-menu transition-effect"><i class="fa fa-bars"></i></div>
+                        <div class="close-menu hidden absolute top-0 right-1 -mt-3 text-2xl border-green-600 transition-effect hover:rotate-180"><i class="fa-solid fa-xmark"></i></div>   
+                    </button>
+                </div>
+
+                <!-- links -->
+                <div class="links-container hidden md:flex px-2 pb-2 md:pb-0">
+
+                    <ul class="links md:flex justify-center items-center md:space-x-6 lg:space-x-12  mb-2 md:mb-0 md:mt-0 space-y-2 md:space-y-0 md:px-12 overflow-hidden">
+                        <li class="hover-effect">
+                            <a href="#home" class="scroll-link active-tab" data-li="home">home</a>
+                        </li>
+                        <li class="hover-effect">
+                            <a href="#about" class="scroll-link" data-li="about">about</a>
+                        </li>
+
+                        <li class="hover-effect">
+                            <a href="#services" class="scroll-link" data-li="services">services</a>
+                        </li>
+                        <li class="hover-effect">
+                            <a href="#tours" class="scroll-link" data-li="tours">tours</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- banner -->
+    <main>
+        <div class="transition-effect">
+            <div class="relative w-full flex flex-col justify-center items-center ">
+                <!-- image -->
+                <div class="bg-gradient-to-t from-green-600 to-green-900 ">
+                    <img src="./hero.jpg" alt=" " class="w-screen h-80 md:h-full object-center object-cover mix-blend-overlay ">
+                </div>
+
+                <div class="absolute top-8 sm:top-4 transform md:translate-y-1/2 flex flex-col justify-center items-center text-white mx-auto px-8 h-56 ">
+
+                    <h1 class="uppercase text-xl md:text-3xl lg:text-5xl mb-5 font-semibold sm:mt-20 lg:mt-56 ">scroll project</h1>
+                    <p class="md:px-24 lg:px-56 ">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, corporis veritatis quia consectetur iste excepturi fugiat nihil nesciunt repellendus labore eum nisi voluptate nam fugit? Laborum a sed quae quod!
+                    </p>
+
+                    <button class="flex rounded border-2 px-4 py-1 mt-4 md:mt-6 border-green-200 uppercase text-sm ">Explore Tours </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- about -->
+    <section id="about" class="mt-2 md:mt-12 mx-auto lg:px-24 ">
+
+        <div class="py-6 text-black ">
+            <div class="px-12 lg:px-0 ">
+                <h1 class="text-2xl md:text-3xl mb-4 border-b-2 pb-3 uppercase font-bold ">About <span class="text-green-500 ">Us</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae qui suscipit architecto fugit, nobis iure similique incidunt necessitatibus natus.</p>
+            </div>
+
+            <div class="md:flex md:flex-row items-center gap md:gap-5 lg:gap-16 mt-10 w-full md:px-12 lg:px-0 ">
+                <!-- image -->
+                <img src="./about.jpg" alt=" " class="w-screen md:w-72 lg:w-96 h-80 md:mt-6 lg:mt-0 md:rounded-md block shadow-bx object-cover object-center ">
+
+                <article class="mt-10 md:mt-6 lg:mt-0 ">
+                    <!--btn container -->
+                    <div class="btn-container flex flex-col bg-white md:rounded-md shadow-bx md:h-80">
+                        <!--  -->
+                        <div class="about flex justify-center items-center bg-white mb-2 lg:mb-4">
+                            <!-- btn 1 -->
+                            <button class="border-2 border-white hover:border-green-500 btn cursor-pointer text-green-700 font-semibold w-full bg-gray-300 py-2 active hover:bg-opacity-60 hover:text-opacity-100 my-0" data-id="history">History</button>
+                            <!-- btn 2 -->
+                            <button class="btn cursor-pointer text-green-700 font-semibold w-full bg-gray-300 py-2 transition ease duration-300 hover:bg-opacity-75 hover:text-opacity-100 border-2 border-white  hover:border-green-500" data-id="vision">Vision</button>
+                            <!-- btn 3 -->
+                            <button class="btn cursor-pointer text-green-700 font-semibold w-full bg-gray-300 py-2 transition ease duration-300 hover:bg-opacity-75 hover:text-opacity-100 border-2 border-white hover:border-green-500" data-id="goals">Goals</button>
+                        </div>
+
+                        <!-- about -->
+                        <div class="content active mb-3 px-12 md:px-6 lg:px-10 " id="history">
+                            <h4 class="cursor-pointer font-semibold py-1">History</h4>
+                            <p class="text-sm text-justify leading-6 md:leading-5 lg:leading-6 py-1 pb-5 ">
+                                I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice pop-up XOXO lomo kombuc ha glossier bicycle rights. Umami kinfolk salvia jean shorts offal venmo. Knausgaard tilde try-hard, woke fixie bajo man bun. Small batch tumeric mustache
+                                tbh wayfarers 8-bit shaman chartreuse tacos. Viral direct trade hoodie ugh chambray, craft beer pork belly flannel tacos single-origin coffee art party migas plaid pop-up.
+                            </p>
+                        </div>
+                        <div class="content mb-3 px-6" id="vision">
+                            <h4 class="cursor-pointer font-semibold rounded py-1 ">Vision</h4>
+                            <p class="text-sm text-justify leading-6 ">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum autem ipsam obcaecati laborum vero debitis minima hic quidem? Commodi maxime unde ipsum odit beatae blanditiis optio? Saepe officiis mollitia aut quaerat fugit dignissimos tenetur nemo
+                                illum consequuntur molestiae, minima repudiandae non minus aspernatur! Pariatur dolor suscipit delectus vitae recusandae dicta ratione quia commodi nam molestiae quo vel eos doloribus, culpa itaque enim modi cupiditate
+                                beatae.
+                            </p>
+                        </div>
+                        <div class="content mb-3 px-6" id="goals">
+                            <h4 class="cursor-pointer font-semibold rounded py-1">Goals</h4>
+                            <p class="text-sm text-justify leading-6">
+                                I'm baby wolf pickled schlitz Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque reprehenderit cupiditate consequuntur earum? Odio delectus sed eius magnam voluptatum fugiat quos labore a enim voluptatem facilis, quasi at? Blanditiis nobis
+                                quibusdam ullam officiis earum fugiat consequuntur sit in pariatur! Reiciendis inventore nemo eligendi! Omnis, quos alias iste provident cupiditate libero!
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- services -->
+    <section id="services" class="mx-auto px-12 lg:px-24 ">
+
+        <div class="py-6 h-full w-full text-black ">
+            <h1 class="text-2xl md:text-3xl mb-4 border-b-2 pb-3 uppercase font-bold ">our <span class="text-green-500 ">services</span></h1>
+            <div class="space-y-4 ">
+                <p class="border-l-4 border-green-600 pl-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae qui suscipit architecto fugit, nobis iure similique incidunt necessitatibus natus.</p>
+
+                <p class="border-l-4 border-green-600 pl-3 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, itaque temporibus corporis eligendi sit aliquam voluptates soluta pariatur minima beatae quisquam id laborum eum labore ipsam libero dolorem, nisi sint.</p>
+                <p class="border-l-4 border-green-600 pl-3 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, itaque temporibus corporis eligendi sit aliquam voluptates soluta pariatur minima beatae quisquam id laborum eum labore ipsam libero dolorem, nisi sint.</p>
+                <p class="border-l-4 border-green-600 pl-3 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, itaque temporibus corporis eligendi sit aliquam voluptates soluta pariatur minima beatae quisquam id laborum eum labore ipsam libero dolorem, nisi sint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- tours -->
+    <section id="tours" class="mt-2 mx-auto px-12 lg:px-24">
+
+        <div class="py-6 h-full w-full text-black ">
+            <h1 class="text-2xl md:text-3xl mb-4 border-b-2 pb-3 uppercase font-bold ">featured <span class="text-green-500 ">tours</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae qui suscipit architecto fugit, nobis iure similique incidunt necessitatibus natus.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, itaque temporibus corporis eligendi sit aliquam voluptates soluta pariatur minima beatae quisquam id laborum eum labore ipsam libero dolorem, nisi sint.</p>
+        </div>
+
+    </section>
+
+    <!-- locations -->
+    <div id="tours" class="mt-2 md:my-2 pb-12 mx-auto md:px-12 lg:px-24 flex flex-col">
+
+        <div class="py-6 h-full w-full text-black px-12 md:px-0">
+            <h1 class="text-xl md:text-2xl mb-4 pb-0.5 capitalize font-bold text-yellow-600">holiday <span class="text-green-600 ">locations</span></h1>
+            <p>Swipe through our collection of some of the best holiday locations available.</p>
+            </p>
+        </div>
+
+        <article class="relative slider-container overflow-hidden mt-2 lg:mt-10 w-full h-full">
+            <!-- img 1 -->
+            <div class="slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/bhutan.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">Bhutan</h1>
+
+                </div>
+            </div>
+            <!-- 2 -->
+
+            <div class="absolute slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/edinburgh-city.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">Edinburgh City, Scotland</h1>
+
+                </div>
+            </div>
+            <!-- 3 -->
+
+            <div class="absolute slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/salzburg.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">Salzburg, Austria</h1>
+
+                </div>
+            </div>
+            <!-- 4 -->
+
+            <div class="absolute slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/southkorea.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">South Korea</h1>
+
+                </div>
+            </div>
+            <!-- 5 -->
+
+            <div class="absolute slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/funchal-madeira.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">Funchal Madeira</h1>
+
+                </div>
+            </div>
+            <!-- 6 -->
+
+            <div class="absolute slide top-0 left-0 text-center w-full h-full">
+                <div class="mx-auto flex flex-col justify-end items-center text-center relative">
+                    <img src="./img/bulgaria.jpg" alt="" class="w-screen h-96 md:h-97 lg:h-98 slide-img block">
+                    <h1 class="label">Bulgaria</h1>
+
+                </div>
+            </div>
+
+        </article>
+
+        <!-- Buttons -->
+        <div class="btn-container text-2xl mt-2 space-x-3 flex justify-end px-6">
+            <!-- previous button -->
+            <button type="button" class="prev-btn capitalize text-yellow-800 hover:text-yellow-600 text-xl">
+                <span class="text-sm md:text-lg">
+                    <i class="fas fa-chevron-left"></i>
+                </span>prev
+            </button>
+            <!-- next button -->
+            <button type="button" class="next-btn capitalize hover:text-green-600 text-green-800 text-xl">next
+                <span class="text-sm md:text-lg text-green-600">
+                    <i class="fas fa-chevron-right"></i>
+                </span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="relative">
+        <div class="px-6 bg-gray-800 h-20 text-white flex justify-center items-center tracking-wider text-sm ">
+            <h4>Copyright &copy; Zuesscript Inc.
+                <span id="date"></span>
+            </h4>
+            <span class="hidden sm:block">. All rights Reserved
+            </span>
+        </div>
+
+        <!-- back to top link-->
+        <div class="top-link bottom-4 right-2 text-white bg-green-400 px-1.5 animate-pulse fixed rounded transform transition-all ease duration-500 text-xl">
+
+            <a href="#backToTop">
+                <i class="fa fa-arrow-up"></i>
+                </i>
+            </a>
+        </div>
+
+    </footer>
+
+    <!-- javascript -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

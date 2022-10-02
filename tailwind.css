@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
+.fixed-nav {
+    @apply fixed top-0 left-0 w-full bg-white shadow-md z-50;
+}
+
+.scroll-link {
+    @apply w-screen md:w-full flex md:items-center md:rounded md:px-1.5 py-1 md:justify-center;
+}
+
+.text-color {
+    @apply text-green-700;
+}
+
+.content {
+    @apply hidden;
+}
+
+.active {
+    @apply block bg-white;
+}
+
+.active-tab {
+    @apply w-screen md:w-full md:bg-green-500 md:text-white;
+}
+
+.hover-effect {
+
+    @apply block cursor-pointer -mx-1 hover:bg-green-500 hover:text-white capitalize md:rounded transition transform ease-in duration-200
+    hover:translate-x-1 md:transform-none px-4 md:px-0 md:inline; 
+
+}
+
+.transition-effect {
+
+    @apply transform transition-all ease-in-out delay-150 duration-300;
+
+}
+
+.slide {
+    @apply grid w-full h-full transform transition-all ease-in-out duration-1000;
+}
+
+.label {
+    @apply absolute text-white text-xl md:text-2xl lg:text-3xl px-3 py-0.5 opacity-90 bg-black w-full justify-center;
+}
